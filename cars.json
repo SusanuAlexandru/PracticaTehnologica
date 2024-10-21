@@ -1,0 +1,75 @@
+[
+    {
+        "image": "./public/img/car-7.jpg",
+        "title": "BMW M5",
+        "year": "2021",
+        "features": ["4 persoane", "5.3km / 1-litru", "Benzină", "Automat"],
+        "rating": 4,
+        "price": "$540",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-8.jpg",
+        "title": "Mercedes e Class",
+        "year": "2020",
+        "features": ["4 persoane", "6.0km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$460",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-9.jpg",
+        "title": "Nissan 370Z",
+        "year": "2020",
+        "features": ["2 persoane", "7.0km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$700",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-10.jpg",
+        "title": "Audi A5",
+        "year": "2007",
+        "features": ["4 persoane", "6.5km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$400",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-11.jpg",
+        "title": "BMW Seria 3",
+        "year": "2018",
+        "features": ["4 persoane", "5.3km / 1-litru", "Benzină", "Automat"],
+        "rating": 4,
+        "price": "$550",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-12.jpg",
+        "title": "Mercedes-Benz A250",
+        "year": "2020",
+        "features": ["4 persoane", "8.0km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$260",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-13.jpg",
+        "title": "Mercedes-Benz SLK",
+        "year": "2020",
+        "features": ["4 persoane", "5.0km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$600",
+        "frequency": "luna"
+    },
+    {
+        "image": "./public/img/car-14.jpg",
+        "title": "Subaru BRZ",
+        "year": "2020",
+        "features": ["2 persoane", "6.0km / 1-litru", "Diesel", "Manual"],
+        "rating": 5,
+        "price": "$760",
+        "frequency": "luna"
+    }
+    
+]

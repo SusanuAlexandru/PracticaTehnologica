@@ -1,0 +1,15 @@
+nav.navbar.navbar-expand-lg.bg-body-tertiary
+    .container-fluid
+        a.navbar-brand(href='/admin') Art School
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse(id='navbarNavAltMarkup')
+            .navbar-nav.me-auto
+                a.nav-link.active(aria-current='page', href='/admin') Acasa
+            ul.navbar-nav
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false") #{user.nume}
+                    ul.dropdown-menu.dropdown-menu-end
+                        li
+                            a.dropdown-item(href="/logout") Logout
+

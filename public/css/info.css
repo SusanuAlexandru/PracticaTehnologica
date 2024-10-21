@@ -1,0 +1,555 @@
+:root {
+
+    /**
+     * colors
+     */
+  
+    --pale-purple-pantone: hsl(262, 63%, 92%);
+    --medium-sea-green: hsl(152, 63%, 43%);
+    --lavender-blush: hsl(336, 35%, 92%);
+    --carolina-blue: hsl(204, 91%, 53%);
+    --columbia-blue: hsl(204, 92%, 90%);
+    --alice-blue-1: hsl(216, 38%, 95%);
+    --alice-blue-2: hsl(216, 75%, 97%);
+    --alice-blue-3: hsl(216, 38%, 95%);
+    --alice-blue-4: hsl(217, 33%, 92%);
+    --independence: hsl(219, 21%, 39%);
+    --deep-cerise: hsl(329, 63%, 52%);
+    --eerie-black: hsl(210, 11%, 15%);
+    --space-cadet: hsl(240, 22%, 25%);
+    --blue-jeans: hsl(204, 80%, 63%);
+    --slate-blue: hsl(262, 60%, 57%);
+    --beau-blue: hsl(208, 86%, 92%);
+    --honey-dew: hsl(152, 48%, 89%);
+    --mimi-pink: hsl(329, 63%, 90%);
+    --red-salsa: hsl(0, 79%, 63%);
+    --sapphire: hsl(211, 100%, 35%);
+    --manatee: hsl(219, 14%, 60%);
+    --white: hsl(0, 0%, 100%);
+  
+    --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
+  
+    /**
+     * typography
+     */
+  
+    --ff-nunito: 'Nunito', sans-serif;
+    --ff-open-sans: 'Open Sans', sans-serif;
+  
+    --fs-1: 2.125rem;
+    --fs-2: 1.875rem;
+    --fs-3: 1.5rem;
+    --fs-4: 1.375rem;
+    --fs-5: 1.125rem;
+    --fs-6: 0.875rem;
+    --fs-7: 0.625rem;
+  
+    --fw-400: 400;
+    --fw-600: 600;
+  
+    /**
+     * transition
+     */
+  
+    --transition: 0.5s ease;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 50px;
+  
+    /**
+     * radius
+     */
+  
+    --radius-10: 10px;
+    --radius-14: 14px;
+    --radius-18: 18px;
+  
+    /**
+     * shadow
+     */
+  
+    --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
+    --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a { text-decoration: none; }
+  
+  a,
+  img,
+  span,
+  label,
+  input,
+  button,
+  ion-icon { display: block; }
+  
+  button,
+  input {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  button { cursor: pointer; }
+  
+  input { width: 100%; }
+  
+  ion-icon { pointer-events: none; }
+  
+  html {
+    font-family: var(--ff-open-sans);
+    color: var(--eerie-black);
+    font-size: 1rem;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--alice-blue-1);
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track { background: var(--white); }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsla(219, 14%, 60%, 0.3);
+    border: 2px solid var(--white);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
+  
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;  
+}
+.container h1{
+    margin-top: 250px;
+    max-width: 25ch;
+    color: hsl(240, 22%, 25%);
+    font-family: var(--ff-open-sans);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.container h4{
+    color: hsl(221, 21%, 32%);
+    margin-top: 20px;
+}
+.container img{
+    width: 750px;
+    height: 600px;
+    border-radius: 25px;
+    margin-top: 100px;
+    object-fit: cover;
+}
+
+.container-cars {
+  width: 100%;
+  min-height: 100%; 
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.cards {
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.container-cars .text{
+  font-family: var(--ff-open-sans);
+  color: var(--space-cadet);
+  margin-top: 70px;
+  font-weight: 600;
+}
+.card {
+  width: 18rem;
+  margin-bottom: 50px; 
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  border-radius: var(--radius-10);
+}
+
+.card h6 {
+  margin-left: 20px;
+  color: var(--independence);
+}
+
+.card li {
+  color: var(--independence);
+}
+
+.card-bodyi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bodyi p {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.card-bodyi h5 {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.card-bodyi h5:hover {
+  color: hsl(204, 91%, 53%);
+}
+
+.car {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car button {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.car p {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-300);
+  margin-left: 15px;
+  margin-top: 7px;
+}
+.container-simple {
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 170px;
+  padding: 0 15px; 
+}
+
+.container-simple h2 {
+  color: var(--space-cadet); 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px; 
+}
+.container-simple h5{
+  color: var(--eerie-black);
+  font-weight: 600;
+}
+.container-simple p{
+  color:hsl(214, 6%, 24%);
+}
+.card-trand:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.info {
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 30px;
+  
+}
+.add-car {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* spațiere între elemente */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: -100px;
+  gap: 10px;
+}
+
+.add-car div {
+  margin: 0; /* elimină margini implicite */
+}
+
+.add-car input, .add-car button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-car input:focus {
+  border-color: #007bff;
+}
+
+.add-car button, .button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none; 
+  display: inline-block; 
+  text-align: center; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-car button:hover, .button:hover {
+  background-color: #0056b3;
+}
+
+input[type="date"]::placeholder {
+  color: black  ;
+}
+.card img{
+  height: 200px;
+  object-fit: cover;
+}
+
+.checked {
+    color: orange;
+}  
+.footer{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+}
+.description h6{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: hsl(240, 22%, 25%);
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.description a{
+  color: var(--independence);
+  margin-bottom: 10px;
+}
+.description a:hover{
+  color: hsl(204, 91%, 53%);
+}
+.description li:hover{
+  color: hsl(204, 91%, 53%);
+}
+.description li{
+  margin-bottom: 10px;
+  color: var(--independence);
+}
+.footer p{
+  margin-top: 25px;
+}
+.footer p:hover{
+  color: hsl(204, 91%, 53%);
+}
+
+/*
+  Info Developer
+*/
+.set-cars h2{
+  margin-top: 80px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--space-cadet) ;
+  font-family: var(--ff-open-sans);
+}
+.set{
+  display: flex;
+  justify-content: center;
+}
+.contact{
+  font-size: 30px;
+}
+.adres li{
+  font-size: 20px;
+}
+.developer{
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px  lightblue;
+  width: 1000px;
+  height: 500px;
+}
+.dev{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.dev h3{
+  margin-top: 45px;
+}
+.developer h5{
+  margin-left: 40px;
+}
+.developer li{
+  margin-left: 40px;
+}
+.developer img{
+  width: 150px;
+  height: 150px;
+  border-radius: 360px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/*
+  link product
+*/
+#product{
+  color: hsl(210, 11%, 15%);
+  margin-top: 30px;
+  float: right;
+
+  
+}
+#product:hover{
+  color: hsl(204, 91%, 53%);
+}
+
+/*
+  products
+*/
+/*.set-cars{
+  background-color:white;
+  margin-top: 100px;
+  width: 100%;
+  height: 1000px;
+  border-radius: 15px;
+  box-shadow: 19px 32px 100px 52px hsl(204, 92%, 90%);;
+}*/
+  
+#carr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 50px;
+  margin-top: 200px;
+  
+}
+.card-one {
+  flex: 0 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-one:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+/*
+  Fereastra pop
+*/
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  max-width: 80%; 
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 999; 
+  display: none; 
+}
+#insuranceForm,
+#locationForm {
+  display: flex;
+  align-items: center;
+}
+
+#insuranceForm label,
+#locationForm label {
+  margin-left: 10px; /* spațiu între buton și text */
+}
+
+#insuranceForm input[type="radio"],
+#locationForm input[type="radio"] {
+  order: -1; /* schimbă ordinea pentru a pune butonul înaintea textului */
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.popup input, .popup select {
+  margin-bottom: 10px;
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.popup button:hover {
+  background-color: #45a049;
+}

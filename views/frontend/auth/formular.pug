@@ -1,0 +1,56 @@
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/css/app.css')
+        link(rel='stylesheet', href='/css/auth.css')
+    body
+        a.back-link(href="/cursuri", class="back-link") Back
+        .form-container
+            h1.form-title Inscrīete la curs
+            form#formular(action="/formular", method="POST")
+                .main-user-info
+                    .user-input-box
+                        label(for="fullName") Nume
+                        input(type="text", id="fullName", name="fullName", placeholder="Enter Full Name", required)
+                    .user-input-box
+                        label(for="username") Prenume
+                        input(type="text", id="username", name="username", placeholder="Enter Username", required)
+                    .user-input-box
+                        label(for="email") Email
+                        input(type="email", id="email", name="email", placeholder="Enter Email", required)
+                    .user-input-box
+                        label(for="phoneNumber") Numar telefon
+                        input(type="text", id="phoneNumber", name="phoneNumber", placeholder="Enter Phone Number", required)
+                    label.formular__denumire Alege complexitatea cursului
+                    select(name="studyLevel", id="studyLevel")
+                        option(value="Copii") Pentru cei mici
+                        option(value="Incepator") Pentru începători
+                        option(value="ImbunatatiAbilitati") Pentru a îmbunătăți abilitățile
+                        option(value="Profesionisti") Pentru profesioniști
+                        option(value="DispunDeTimpLiber") Dispun de timp liber
+                        option(value="AjutorParticular") Cine are nevoie de ajutor particular
+                    .checkbox-container
+                        label.formular__denumire Alege unul sau mai multe cursuri:
+                        br
+                        input(type="checkbox", id="pictura", name="cursuri", value="pictura")
+                        label.formular__curs(for="pictura") Pictura
+                        br
+                        input(type="checkbox", id="desenul", name="cursuri", value="desenul")
+                        label.formular__curs(for="desenul") Desenul
+                        br
+                        input(type="checkbox", id="sculptura", name="cursuri", value="sculptura")
+                        label.formular__curs(for="sculptura") Sculptura
+                        br
+                        input(type="checkbox", id="compozitia-savalet", name="cursuri", value="compozitia-savalet")
+                        label.formular__curs(for="compozitia-savalet") Compozitia de savalet
+                        br
+                        input(type="checkbox", id="compozitia-decorativa", name="cursuri", value="compozitia-decorativa")
+                        label.formular__curs(for="compozitia-decorativa") Compozitia decorativa
+                        br
+                        input(type="checkbox", id="istoriaArtelor", name="cursuri", value="istoriaArtelor")
+                        label.formular__curs(for="istoriaArtelor") Istoria Artelor
+                input(type="reset", value="Reset")
+                .form-submit-btn
+                    input(type="submit", value="Trimite")
+
+        script(src="js/formular.js")

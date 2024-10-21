@@ -1,0 +1,46 @@
+.setlog{
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+  }
+  .login{
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+  }
+  .btn-primary{
+    margin-left: auto;
+  } 
+  .setsign{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .signin{
+    width: 400px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+  }
+  .link{
+    color: hsl(204, 91%, 53%);;
+  }
+  /*
+    add-cars
+  */
+  .section-add{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .addcards{
+    height: 650px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    width: 70%;
+    
+  }

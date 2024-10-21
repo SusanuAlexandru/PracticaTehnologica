@@ -1,0 +1,20 @@
+extends ../guest
+
+block content
+    main.main 
+        section.login
+            .wrapper
+                .login_wrapper
+                    .login__header
+                        h3.login__title Bine ai revenit !
+                    form.form_login.m-3#form_login(action="/login", method="POST")
+                        label.label_login(for="username") Adresa de email
+                        input(type="text", id="username", name="username", required, class="login_data label_login form-control")
+                        label.label_login.label_login-password(for="password") Parola
+                        input(type="password", id="password", name="password", required, class="login_data label_login form-control")
+                        .logo_links.d-flex.justify-content-between
+                            a.logo_link.forgot_password(href="#") Ai uitat parola?
+                            a.logo_link.logo_register(href="/register") Inregistreaza-te
+                        .btnn
+                            button.login_btn(type="submit") Logheaza-te
+    script(src="js/login.js")
