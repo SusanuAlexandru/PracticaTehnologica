@@ -1,0 +1,2 @@
+# PracticaTehnologica
+Sarcina practica 
